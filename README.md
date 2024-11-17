@@ -1,4 +1,4 @@
-# 中山大学2024年《计算机图形学》课程作业  
+# 中山大学2024《计算机图形学》课程作业  
  ![](https://img.shields.io/badge/platform-windows-brightgreen.svg) 
  
 授课：陶钧老师
