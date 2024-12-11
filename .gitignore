@@ -1,2 +1,6 @@
 **/Debug/
 **/Release/
+.vs/
+*.db
+*.ipch
+*.pch
