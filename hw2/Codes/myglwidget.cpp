@@ -382,7 +382,15 @@ void MyGLWidget::DDA(FragmentAttr& start, FragmentAttr& end, int id) {
 }
 
 
-
+// ##############################################################
+// ## 函数：GouraudShading
+// ## 函数描述：使用Gouraud着色方法计算像素的颜色
+// ## 参数描述：
+// ##    int x：像素的x坐标
+// ##    int y：像素的y坐标
+// ##    FragmentAttr* v：顶点属性数组（包含三个顶点的信息）
+// ##    int index：渲染缓冲区的索引
+// ##############################################################
 void MyGLWidget::GouraudShading(int x, int y, FragmentAttr* v, int index) {
 	// 重心坐标
 	float alpha = (((float)(y - v[1].y) * (v[2].x - v[1].x) - (float)(x - v[1].x) * (v[2].y - v[1].y)) /
@@ -395,6 +403,14 @@ void MyGLWidget::GouraudShading(int x, int y, FragmentAttr* v, int index) {
 	temp_render_buffer[index] = color;
 }
 
+// ##############################################################
+// ## 函数：PhongShading（版本1）
+// ## 函数描述：计算给定像素的颜色值，使用Phong着色方法
+// ## 参数描述：
+// ##    FragmentAttr& nowPixelResult：当前像素的属性，包括法线、位置等
+// ## 返回值：
+// ##    vec3：计算得出的颜色值
+// ##############################################################
 vec3 MyGLWidget::PhongShading(FragmentAttr& nowPixelResult) {
 
 	vec3 norm = glm::normalize(nowPixelResult.normal);
@@ -414,6 +430,15 @@ vec3 MyGLWidget::PhongShading(FragmentAttr& nowPixelResult) {
 	return color;
 }
 
+// ##############################################################
+// ## 函数：PhongShading（版本2）
+// ## 函数描述：对屏幕像素使用Phong着色方法并更新渲染缓冲区
+// ## 参数描述：
+// ##    int x：像素的x坐标
+// ##    int y：像素的y坐标
+// ##    FragmentAttr* v：顶点属性数组（包含三个顶点的信息）
+// ##    int index：渲染缓冲区的索引
+// ##############################################################
 void MyGLWidget::PhongShading(int x, int y, FragmentAttr* v, int index) {
 	// 重心坐标
 	float alpha = (((float)(y - v[1].y) * (v[2].x - v[1].x) - (float)(x - v[1].x) * (v[2].y - v[1].y)) /
@@ -435,7 +460,14 @@ void MyGLWidget::PhongShading(int x, int y, FragmentAttr* v, int index) {
 	temp_render_buffer[index] = finalColor;
 }
 
-
+// ##############################################################
+// ## 函数：BlinnPhong
+// ## 函数描述：计算给定像素的颜色值，使用Blinn-Phong着色方法
+// ## 参数描述：
+// ##    FragmentAttr& nowPixelResult：当前像素的属性，包括法线、位置等
+// ## 返回值：
+// ##    vec3：计算得出的颜色值
+// ##############################################################
 vec3 MyGLWidget::BlinnPhong(FragmentAttr& nowPixelResult) {
 
 	vec3 norm = glm::normalize(nowPixelResult.normal);
@@ -456,6 +488,15 @@ vec3 MyGLWidget::BlinnPhong(FragmentAttr& nowPixelResult) {
 	return color;
 }
 
+// ##############################################################
+// ## 函数：BlinnPhongShading
+// ## 函数描述：对屏幕像素使用Blinn-Phong着色方法并更新渲染缓冲区
+// ## 参数描述：
+// ##    int x：像素的x坐标
+// ##    int y：像素的y坐标
+// ##    FragmentAttr* v：顶点属性数组（包含三个顶点的信息）
+// ##    int index：渲染缓冲区的索引
+// ##############################################################
 void MyGLWidget::BlinnPhongShading(int x, int y, FragmentAttr* v, int index) {
 	// 重心坐标
 	float alpha = (((float)(y - v[1].y) * (v[2].x - v[1].x) - (float)(x - v[1].x) * (v[2].y - v[1].y)) /
