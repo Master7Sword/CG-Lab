@@ -16,5 +16,5 @@
 
 - hw3: Phong shading 与 VBO 绘制三维物体<br>
   ![hw3_demo_1](hw3/assets/tighnari.png)<br>
-- final project: to be continued...
+- final project: see https://github.com/Master7Sword/CG-FinalProject
   <br>
