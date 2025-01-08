@@ -7,14 +7,17 @@
 ## 目前上线实验
 
 - hw1: 环境配置 + 平面/立体姓名首字母绘制<br>
-  ![hw1_demo](hw1/assets/hw1_demo.gif)<br>
+  ![hw1_demo](hw1/assets/hw1_demo.gif)
   
 - hw2: 光栅化 + 光照/着色<br>
-  ![hw2_demo_1](hw2/assets/DDA_teapot_7657.png)
-  ![hw2_demo_2](hw2/assets/edge_walking_teapot_7657.png)
-  ![hw2_demo_3](hw2/assets/Blinn-Phong_teapot_7657.png)<br> <br>
+  <div style="display: flex; justify-content: space-between;">
+    <img src="hw2/assets/DDA_teapot_7657.png" alt="hw2_demo_1" style="width: 33%;">
+    <img src="hw2/assets/edge_walking_teapot_7657.png" alt="hw2_demo_2" style="width: 33%;">
+    <img src="hw2/assets/Blinn-Phong_teapot_7657.png" alt="hw2_demo_3" style="width: 33%;">
+  </div>
+<br>
 
-- hw3: Phong shading 与 VBO 绘制三维物体<br>
+- hw3: Phong shading 与 VBO 绘制三维物体
   ![hw3_demo_1](hw3/assets/tighnari.png) <br> <br>
 
 - Final Project: 3D烟花粒⼦实时渲染系统<br>
