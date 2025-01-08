@@ -11,9 +11,9 @@
   
 - hw2: 光栅化 + 光照/着色<br>
   <div style="display: flex; justify-content: space-between;">
-    <img src="hw2/assets/DDA_teapot_7657.png" alt="hw2_demo_1" style="width: 33%;">
-    <img src="hw2/assets/edge_walking_teapot_7657.png" alt="hw2_demo_2" style="width: 33%;">
-    <img src="hw2/assets/Blinn-Phong_teapot_7657.png" alt="hw2_demo_3" style="width: 33%;">
+    <img src="hw2/assets/DDA_teapot_7657.png" alt="hw2_demo_1" style="width: 32%;">
+    <img src="hw2/assets/edge_walking_teapot_7657.png" alt="hw2_demo_2" style="width: 32%;">
+    <img src="hw2/assets/Blinn-Phong_teapot_7657.png" alt="hw2_demo_3" style="width: 32%;">
   </div>
 <br>
 
